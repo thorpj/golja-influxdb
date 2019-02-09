@@ -22,6 +22,10 @@ class influxdb::install(
       tag    => 'influxdb',
     }
 
+    package { 'collectd':
+      ensure => present,
+    }
+
   }
 
 }
